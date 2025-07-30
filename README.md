@@ -7,3 +7,22 @@ Missing data problems, such as missing modalities in multi-modal brain MRI and m
 ![teaser](assets/CoPeVAE.png)
 
 ![teaser](assets/MDiT3D.png)
+
+## Prepare Dataset
+First, you need to download the brain and cardiac MRI datasets. All dataset used in our experiment are open-source except UKBB and MESA, and you can download yourself.
+
+![teaser](assets/Dataset.png)
+
+```
+├── dataset
+    ├── BrainMRI
+      ├── BraTS2021
+      └── IXI
+    ├── CardiacMRI
+      ├── UKBB
+      ├── MESA
+      ├── ACDC
+      └── MSCMR
+```
+
+## Usage
