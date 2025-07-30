@@ -81,4 +81,4 @@ Stage II: MDiT3D-C train:
 train_MDiT3D_Cardiac.sh
 ```
 ## Acknowledgement
-Our code is implemented based on [MONAI](https://github.com/Project-MONAI/research-contributions), We thank for part of their codes.
+Our code is implemented based on [MONAI](https://github.com/Project-MONAI/research-contributions), we thank for part of their codes.
