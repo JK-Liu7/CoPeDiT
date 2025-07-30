@@ -60,7 +60,7 @@ The structure of our dataset folder is:
 ```
 
 ## Usage
-Brain MRI Synthesis:
+### Brain MRI Synthesis:
 
 Stage I: CoPeVAE train: 
 ```bash 
@@ -70,7 +70,7 @@ Stage II: MDiT3D train:
 ```bash 
 train_MDiT3D_Brain.sh
 ```
-Cardiac MRI Synthesis:
+### Cardiac MRI Synthesis:
 
 Stage I: CoPeVAE train: 
 ```bash 
