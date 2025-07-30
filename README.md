@@ -26,12 +26,37 @@ The structure of our dataset folder is:
 ├── dataset
     ├── BrainMRI
       ├── BraTS2021
+            ├── BraTS2021_00000
+                ├── BraTS2021_00000_t1.nii.gz
+                ├── BraTS2021_00000_t1ce.nii.gz
+                ├── BraTS2021_00000_t2.nii.gz
+                └── BraTS2021_00000_flair.nii.gz
+            └── BraTS2021_00002
       └── IXI
+            ├── IXI-T1
+                └── IXI012-HH-1211-T1.nii.gz
+            ├── IXI-T2
+            └── IXI-PD
     ├── CardiacMRI
       ├── UKBB
       ├── MESA
       ├── ACDC
+            ├── database
+                ├── training
+                    ├── patient001
+                        ├── patient001_frame01.nii.gz
+                        └── patient001_frame12.nii.gz
+                    └── patient002
+                └── testing
+                    ├── patient001
+                        ├── patient101_frame01.nii.gz
+                        └── patient101_frame14.nii.gz
+                    └── patient102
       └── MSCMR
+            ├── image
+                ├── patient001_frame01.nii.gz
+                ├── patient001_frame12.nii.gz
+                └── patient002_frame01.nii.gz
 ```
 
 ## Usage
