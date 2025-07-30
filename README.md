@@ -60,7 +60,25 @@ The structure of our dataset folder is:
 ```
 
 ## Usage
+Brain MRI Synthesis:
 
+Stage I: CoPeVAE train: 
+```bash 
+train_CoPeVAE_Brain.sh
+
+Stage II: MDiT3D train: 
+```bash 
+train_MDiT3D_Brain.sh
+
+Cardiac MRI Synthesis:
+
+Stage I: CoPeVAE train: 
+```bash 
+train_CoPeVAE_Cardiac.sh
+
+Stage II: MDiT3D train: 
+```bash 
+train_MDiT3D_Cardiac.sh
 
 ## Acknowledgement
 Our code is implemented based on [MONAI](https://github.com/Project-MONAI/research-contributions), We thank for part of their codes.
