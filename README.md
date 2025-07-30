@@ -62,21 +62,21 @@ The structure of our dataset folder is:
 ## Usage
 ### Brain MRI Synthesis:
 
-Stage I: CoPeVAE train: 
+Stage I: CoPeVAE-B train: 
 ```bash 
 train_CoPeVAE_Brain.sh
 ```
-Stage II: MDiT3D train: 
+Stage II: MDiT3D-B train: 
 ```bash 
 train_MDiT3D_Brain.sh
 ```
 ### Cardiac MRI Synthesis:
 
-Stage I: CoPeVAE train: 
+Stage I: CoPeVAE-C train: 
 ```bash 
 train_CoPeVAE_Cardiac.sh
 ```
-Stage II: MDiT3D train: 
+Stage II: MDiT3D-C train: 
 ```bash 
 train_MDiT3D_Cardiac.sh
 ```
