@@ -13,14 +13,6 @@ First, you need to download the brain and cardiac MRI datasets. All dataset used
 
 ![teaser](assets/Dataset.png)
 
-BraTS 2021: https://www.synapse.org/#!Synapse:syn25829067/wiki/610863 
-
-IXI: https://brain-development.org/ixi-dataset/ 
-
-ACDC: https://www.creatis.insa-lyon.fr/Challenge/acdc/
-
-MSCMR: https://zmiclab.github.io/zxh/0/mscmrseg19/data.html
-
 The structure of our dataset folder is:
 ```
 ├── dataset
