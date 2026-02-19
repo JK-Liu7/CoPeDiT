@@ -49,26 +49,4 @@ The structure of our dataset folder is:
                 ├── patient001_frame01.nii.gz
                 ├── patient001_frame12.nii.gz
                 └── patient002_frame01.nii.gz
-```
 
-## Usage
-### Brain MRI Synthesis:
-
-Stage I: CoPeVAE-B train: 
-```bash 
-train_CoPeVAE_Brain.sh
-```
-Stage II: MDiT3D-B train: 
-```bash 
-train_MDiT3D_Brain.sh
-```
-### Cardiac MRI Synthesis:
-
-Stage I: CoPeVAE-C train: 
-```bash 
-train_CoPeVAE_Cardiac.sh
-```
-Stage II: MDiT3D-C train: 
-```bash 
-train_MDiT3D_Cardiac.sh
-```
