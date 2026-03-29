@@ -1,20 +1,45 @@
 # CoPeDiT
-Code for the paper "Exploiting Completeness Perception with Diffusion Transformer for Unified 3D MRI Synthesis"
+<a href="https://arxiv.org/abs/2602.18400"><img src='https://img.shields.io/badge/arXiv-CoPeDiT-red' alt='Paper PDF'></a>
+Code for the paper **"Exploiting Completeness Perception with Diffusion Transformer for Unified 3D MRI Synthesis"**
 
-## Abstract
-Missing data problems, such as missing modalities in multi-modal brain MRI and missing slices in cardiac MRI, pose significant challenges in clinical practice. Existing methods rely on external guidance to supply detailed missing state for instructing generative models to synthesize missing MRIs. However, manual indicators are not always available or reliable in real-world scenarios due to the unpredictable nature of clinical environments. Moreover, these explicit masks are not informative enough to provide guidance for improving semantic consistency. In this work, we argue that generative models should infer and recognize missing states in a self-perceptive manner, enabling them to better capture subtle anatomical and pathological variations. Towards this goal, we propose CoPeDiT, a general-purpose latent diffusion model equipped with ***completeness perception*** for unified synthesis of 3D MRIs. Specifically, we incorporate dedicated pretext tasks into our tokenizer, CoPeVAE, empowering it to learn completeness-aware discriminative prompts, and design MDiT3D, a specialized diffusion transformer architecture for 3D MRI synthesis, that effectively uses the learned prompts as guidance to enhance semantic consistency in 3D space. Comprehensive evaluations on three large-scale MRI datasets demonstrate that CoPeDiT significantly outperforms state-of-the-art methods, achieving superior robustness, generalizability, and flexibility.
+## 📖 Abstract
+Missing data problems, such as missing modalities in multi-modal brain MRI and missing slices in cardiac MRI, pose significant challenges in clinical practice. Existing methods rely on external guidance to supply detailed missing state for instructing generative models to synthesize missing MRIs. However, manual indicators are not always available or reliable in real-world scenarios due to the unpredictable nature of clinical environments. Moreover, these explicit masks are not informative enough to provide guidance for improving semantic consistency. In this work, we argue that generative models should infer and recognize missing states in a self-perceptive manner, enabling them to better capture subtle anatomical and pathological variations. Towards this goal, we propose **CoPeDiT**, a general-purpose latent diffusion model equipped with **completeness perception** for unified synthesis of 3D MRIs. Specifically, we incorporate dedicated pretext tasks into our tokenizer, **CoPeVAE**, empowering it to learn completeness-aware discriminative prompts, and design **MDiT3D**, a specialized diffusion transformer architecture for 3D MRI synthesis, that effectively uses the learned prompts as guidance to enhance semantic consistency in 3D space. Comprehensive evaluations on three large-scale MRI datasets demonstrate that CoPeDiT significantly outperforms state-of-the-art methods, achieving superior robustness, generalizability, and flexibility.
 
 ![teaser](assets/CoPeVAE.png)
 
 ![teaser](assets/MDiT3D.png)
 
-## Datasets
-First, you need to download the brain and cardiac MRI datasets. All dataset used in our experiment are open-source except UKBB and MESA, and you can download yourself.
+## 🔍 Overview
+CoPeDiT is a unified framework for 3D MRI synthesis under incomplete input settings. It is designed to handle both
+
+- **Missing modality synthesis** in multi-modal brain MRI
+- **Missing slice synthesis** in cardiac MRI
+
+The framework consists of two main components
+
+- **CoPeVAE**
+  A completeness-aware tokenizer that learns discriminative prompts through dedicated pretext tasks
+
+- **MDiT3D**
+  A diffusion transformer tailored for 3D MRI synthesis that leverages learned completeness prompts to improve semantic consistency in 3D space
+
+Together, these modules enable CoPeDiT to perceive incomplete observations in a self-guided manner and perform robust unified synthesis across diverse MRI scenarios.
+
+## ✨ Features
+- Unified framework for both brain MRI missing modality synthesis and cardiac MRI missing slice synthesis
+- Completeness-aware latent tokenizer with dedicated pretext learning
+- Specialized 3D diffusion transformer for semantically consistent MRI synthesis
+- Strong robustness and generalizability across multiple large-scale datasets
+- Flexible design that supports diverse incomplete MRI settings
+
+## 🗂️ Datasets
+First, you need to download the brain and cardiac MRI datasets. All datasets used in our experiments are open-source except **UKBB** and **MESA**, and can be downloaded individually from their official sources.
 
 ![teaser](assets/Dataset.png)
 
-The structure of our dataset folder is:
-```
+The structure of our dataset folder is
+
+```text
 ├── dataset
     ├── BrainMRI
         ├── BraTS2021
@@ -49,4 +74,16 @@ The structure of our dataset folder is:
                 ├── patient001_frame01.nii.gz
                 ├── patient001_frame12.nii.gz
                 └── patient002_frame01.nii.gz
+```
 
+## ✒️ Citation
+
+If you find this project useful, please consider citing our paper.
+
+```bibtex
+@article{liu2026exploiting,
+  title={Exploiting Completeness Perception with Diffusion Transformer for Unified 3D MRI Synthesis},
+  author={Liu, Junkai and Aung, Nay and Arvanitis, Theodoros N and Lima, Joao AC and Petersen, Steffen E and Alexander, Daniel C and Zhang, Le},
+  journal={arXiv preprint arXiv:2602.18400},
+  year={2026}
+}
