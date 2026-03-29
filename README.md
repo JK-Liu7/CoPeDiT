@@ -1,5 +1,6 @@
 # CoPeDiT
 <a href="https://arxiv.org/abs/2602.18400"><img src='https://img.shields.io/badge/arXiv-CoPeDiT-red' alt='Paper PDF'></a>
+
 Code for the paper **"Exploiting Completeness Perception with Diffusion Transformer for Unified 3D MRI Synthesis"**
 
 ## 📝 TODO
@@ -34,7 +35,7 @@ Together, these modules enable CoPeDiT to perceive incomplete observations in a 
 ## ✨ Features
 
 | Feature | Description |
-| :--- | :--- |
+| :---- | :--- |
 | 🧠 **Unified Framework** | A unified framework for both brain MRI missing modality synthesis and cardiac MRI missing slice synthesis. |
 | 🔍 **Completeness-aware Tokenizer** | CoPeVAE learns completeness-aware latent representations with dedicated pretext tasks. |
 | 🧩 **Specialized 3D Diffusion Transformer** | MDiT3D is tailored for semantically consistent 3D MRI synthesis. |
