@@ -19,18 +19,18 @@ Missing data problems, such as missing modalities in multi-modal brain MRI and m
 ## 🔍 Overview
 CoPeDiT is a unified framework for 3D MRI synthesis under incomplete input settings. It is designed to handle both
 
-- **Missing modality synthesis** in multi-modal brain MRI
-- **Missing slice synthesis** in cardiac MRI
+- **Missing modality synthesis** in multi-modal brain MRI 🧠
+- **Missing slice synthesis** in cardiac MRI ❤️
 
 The framework consists of two main components
 
-- **CoPeVAE**
-  A completeness-aware tokenizer that learns discriminative prompts through dedicated pretext tasks
+- **CoPeVAE**  
+  A completeness-aware tokenizer that learns discriminative prompts through dedicated pretext tasks 🔍
 
-- **MDiT3D**
-  A diffusion transformer tailored for 3D MRI synthesis that leverages learned completeness prompts to improve semantic consistency in 3D space
+- **MDiT3D**  
+  A diffusion transformer tailored for 3D MRI synthesis that leverages learned completeness prompts to improve semantic consistency in 3D space 🧩
 
-Together, these modules enable CoPeDiT to perceive incomplete observations in a self-guided manner and perform robust unified synthesis across diverse MRI scenarios.
+Together, these modules enable CoPeDiT to perceive incomplete observations in a self-guided manner and perform robust unified synthesis across diverse MRI scenarios 🏆
 
 ## ✨ Features
 
