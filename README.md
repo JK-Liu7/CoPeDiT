@@ -34,13 +34,32 @@ Together, these modules enable CoPeDiT to perceive incomplete observations in a 
 
 ## ✨ Features
 
-| Feature | Description |
-| :---- | :--- |
-| 🧠 **Unified Framework** | A unified framework for both brain MRI missing modality synthesis and cardiac MRI missing slice synthesis. |
-| 🔍 **Completeness-awareness** | CoPeVAE learns completeness-aware latent representations with dedicated pretext tasks. |
-| 🧩 **Specialized&nbsp;3D&nbsp;DiT** | MDiT3D is tailored for semantically consistent 3D MRI synthesis. || MDiT3D is tailored for semantically consistent 3D MRI synthesis. |
-| 🚀 **Robust & Generalizable** | Delivers strong robustness and generalizability across multiple large-scale datasets. |
-| ⚙️ **Flexible Design** | Supports diverse incomplete MRI settings with a flexible and unified design. |
+<table>
+  <tr>
+    <th align="left">Feature</th>
+    <th align="left">Description</th>
+  </tr>
+  <tr>
+    <td nowrap>🧠 <strong>Unified Framework</strong></td>
+    <td>A unified framework for both brain MRI missing modality synthesis and cardiac MRI missing slice synthesis.</td>
+  </tr>
+  <tr>
+    <td nowrap>🔍 <strong>Completeness-awareness</strong></td>
+    <td>CoPeVAE learns completeness-aware latent representations with dedicated pretext tasks.</td>
+  </tr>
+  <tr>
+    <td nowrap>🧩 <strong>Specialized 3D DiT</strong></td>
+    <td>MDiT3D is tailored for semantically consistent 3D MRI synthesis.</td>
+  </tr>
+  <tr>
+    <td nowrap>🚀 <strong>Robust &amp; Generalizable</strong></td>
+    <td>Delivers strong robustness and generalizability across multiple large-scale datasets.</td>
+  </tr>
+  <tr>
+    <td nowrap>⚙️ <strong>Flexible Design</strong></td>
+    <td>Supports diverse incomplete MRI settings with a flexible and unified design.</td>
+  </tr>
+</table>
 
 
 ## 🗂️ Datasets
