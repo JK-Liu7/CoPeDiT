@@ -108,6 +108,7 @@ The structure of our dataset folder is
 
 ## 🌟 Why CoPeDiT
 CoPeDiT is a unified framework for 3D MRI synthesis that handles both missing modality and missing slice settings. With **completeness perception**, it enables the model to recognize incomplete observations in a self-guided manner and improve 3D semantic consistency. 
+
 If you find this work useful, consider starring ⭐ the repository and citing our paper!
 
 ## 🙏 Acknowledgement
