@@ -1,4 +1,5 @@
 # CoPeDiT
+<a href="https://arxiv.org/abs/2602.18400"><img src='https://img.shields.io/badge/arXiv-CoPeDiT-red' alt='Paper PDF'></a>
 Code for the paper **"Exploiting Completeness Perception with Diffusion Transformer for Unified 3D MRI Synthesis"**
 
 ## 🔥 News
@@ -217,3 +218,17 @@ If you find this work useful, please consider starring ⭐ this repository.
 ## 🙏 Acknowledgement
 Our code is built upon [MONAI](https://github.com/Project-MONAI/MONAI). We sincerely thank the MONAI team and community for their open-source contributions to medical image analysis research.
 
+## 📝 Citation
+
+If you find this project useful, please consider citing our paper.
+
+```bibtex
+@article{
+liu2026exploiting,
+title={Exploiting Completeness Perception with Diffusion Transformer for Unified 3D {MRI} Synthesis},
+author={Junkai Liu and Nay Aung and Theodoros N. Arvanitis and Joao A. C. Lima and Steffen E. Petersen and Le Zhang},
+journal={Transactions on Machine Learning Research},
+issn={2835-8856},
+year={2026},
+url={https://openreview.net/forum?id=DCaolE9oBN},
+}
