@@ -1,23 +1,25 @@
 # CoPeDiT
-<a href="https://arxiv.org/abs/2602.18400"><img src='https://img.shields.io/badge/arXiv-CoPeDiT-red' alt='Paper PDF'></a>
+<a href="https://openreview.net/forum?id=DCaolE9oBN"><img src="https://img.shields.io/badge/TMLR-Published-blue" alt="TMLR"></a>
+<a href="https://arxiv.org/abs/2602.18400"><img src="https://img.shields.io/badge/arXiv-CoPeDiT-red" alt="arXiv"></a>
+<a href="https://github.com/JK-Liu7/CoPeDiT"><img src="https://img.shields.io/badge/Code-GitHub-black?logo=github" alt="GitHub"></a>
 
 Code for the paper **"Exploiting Completeness Perception with Diffusion Transformer for Unified 3D MRI Synthesis"**
 
 ## 🔥 News
 
-* 🎉 **Paper accepted:** CoPeDiT has been accepted to **Transactions on Machine Learning Research (TMLR)**!
+* 🎉 **Paper published:** CoPeDiT is now published in **Transactions on Machine Learning Research (TMLR)**!
 * 💻 **Code released:** Training and inference code for **CoPeVAE** and **MDiT3D** is now available.
 
 ## 📌 TL;DR
 
-**CoPeDiT** enables unified 3D MRI synthesis under missing-modality and missing-slice settings by replacing manual mask codes with self-learned **completeness-aware prompts**. Built with **CoPeVAE** and **MDiT3D**, it generates high-fidelity and structurally consistent MRIs across diverse incomplete scenarios.
+**CoPeDiT** enables unified 3D MRI synthesis under missing-modality and missing-slice settings by replacing externally provided mask-codes with self-learned **completeness-aware prompts**. Built with **CoPeVAE** and **MDiT3D**, it generates high-fidelity and structurally consistent MRIs across diverse incomplete scenarios.
 
-![teaser](assets/CoPeVAE.png)
+**CoPeDiT** is a shared completeness-perception framework for 3D MRI synthesis under missing-modality and missing-slice settings. Instead of relying on externally supplied mask codes during generation, it learns **completeness-aware prompt tokens** that capture **how many, which/where, and what** elements are missing, and uses them to guide structurally consistent 3D MRI synthesis.
 
-![teaser](assets/MDiT3D.png)
+![Teaser](assets/Teaser.png)
 
 ## 🔍 Overview
-CoPeDiT is a unified framework for 3D MRI synthesis under incomplete input settings. It is designed to handle both
+CoPeDiT is a shared completeness-perception framework for 3D MRI synthesis, with task-specific instantiations for different incomplete-input settings. It is designed to handle both
 
 - **Missing modality synthesis** in multi-modal brain MRI 🧠
 - **Missing slice synthesis** in cardiac MRI ❤️
@@ -32,6 +34,10 @@ The framework consists of two main components
 
 Together, these modules enable CoPeDiT to perceive incomplete observations in a self-guided manner and perform robust unified synthesis across diverse MRI scenarios 🏆
 
+![CoPeVAE framework](assets/CoPeVAE.png)
+
+![MDiT3D architecture](assets/MDiT3D.png)
+
 ## ✨ Highlights
 
 <table>
@@ -40,11 +46,11 @@ Together, these modules enable CoPeDiT to perceive incomplete observations in a 
     <th align="left">Description</th>
   </tr>
   <tr>
-    <td nowrap>🧠 <strong>Unified Framework</strong></td>
-    <td>A unified framework for both brain MRI missing modality synthesis and cardiac MRI missing slice synthesis.</td>
+    <td nowrap>🧠 <strong>Unified MRI Synthesis</strong></td>
+    <td>A shared framework for both brain MRI missing modality synthesis and cardiac MRI missing slice synthesis.</td>
   </tr>
   <tr>
-    <td nowrap>🔍 <strong>Completeness-awareness</strong></td>
+    <td nowrap>🔍 <strong>Self-Perceived Completeness</strong></td>
     <td>CoPeVAE learns completeness-aware latent representations with dedicated pretext tasks.</td>
   </tr>
   <tr>
@@ -52,12 +58,12 @@ Together, these modules enable CoPeDiT to perceive incomplete observations in a 
     <td>MDiT3D is tailored for semantically consistent 3D MRI synthesis.</td>
   </tr>
   <tr>
-    <td nowrap>🚀 <strong>Robust &amp; Generalizable</strong></td>
-    <td>Delivers strong robustness and generalizability across multiple large-scale datasets.</td>
+    <td nowrap>🔌 <strong>Plug-and-Play Prompt Tokens</strong></td>
+    <td>Prompt tokens improve existing mask-conditioned baselines.</td>
   </tr>
   <tr>
-    <td nowrap>⚙️ <strong>Flexible Design</strong></td>
-    <td>Supports diverse incomplete MRI settings with a flexible and unified design.</td>
+    <td nowrap>🚀 <strong>Robust Missing-Pattern Synthesis</strong></td>
+    <td>Supports diverse + unseen missing MRI configurations.</td>
   </tr>
 </table>
 
@@ -75,7 +81,9 @@ For complete comparisons across all missing configurations and baselines, please
 ## 🛠️ Installation
 Clone the repository and install dependencies:
 ```
-# 1. Install environment
+git clone https://github.com/JK-Liu7/CoPeDiT.git
+cd CoPeDiT
+
 conda create -n copedit python=3.11
 conda activate copedit
 pip install -r requirements.txt
