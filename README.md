@@ -216,7 +216,6 @@ bash inference_MDiT3D_Cardiac.sh
 
 - Please update `--dataset`, `--missing_num`, dataset paths, output directories, and checkpoint paths in the corresponding scripts before running.
 - Stage II training requires the trained CoPeVAE checkpoint from Stage I.
-- Pretrained model checkpoints will be released soon.
 
 ## 🌟 Why CoPeDiT
 CoPeDiT is a unified framework for 3D MRI synthesis that handles both missing modality and missing slice settings. With **completeness perception**, it enables the model to recognize incomplete observations in a self-guided manner and improve 3D semantic consistency. 
@@ -225,6 +224,10 @@ If you find this work useful, please consider starring ⭐ this repository.
 
 ## 🙏 Acknowledgement
 Our code is built upon [MONAI](https://github.com/Project-MONAI/MONAI). We sincerely thank the MONAI team and community for their open-source contributions to medical image analysis research.
+
+## 💬 Questions / Contact
+
+For questions regarding CoPeDiT, please feel free to open a GitHub issue or contact at [jxl1920@student.bham.ac.uk](mailto:jxl1920@student.bham.ac.uk) or [liujk1997@gmail.com](mailto:liujk1997@gmail.com).
 
 ## 📝 Citation
 
