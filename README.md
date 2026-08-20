@@ -1,5 +1,6 @@
 # CoPeDiT
 <a href="https://arxiv.org/abs/2602.18400"><img src='https://img.shields.io/badge/arXiv-CoPeDiT-red' alt='Paper PDF'></a>
+
 Code for the paper **"Exploiting Completeness Perception with Diffusion Transformer for Unified 3D MRI Synthesis"**
 
 ## 🔥 News
