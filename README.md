@@ -12,8 +12,6 @@ Code for the paper **"Exploiting Completeness Perception with Diffusion Transfor
 
 ## 📌 TL;DR
 
-**CoPeDiT** enables unified 3D MRI synthesis under missing-modality and missing-slice settings by replacing externally provided mask-codes with self-learned **completeness-aware prompts**. Built with **CoPeVAE** and **MDiT3D**, it generates high-fidelity and structurally consistent MRIs across diverse incomplete scenarios.
-
 **CoPeDiT** is a shared completeness-perception framework for 3D MRI synthesis under missing-modality and missing-slice settings. Instead of relying on externally supplied mask codes during generation, it learns **completeness-aware prompt tokens** that capture **how many, which/where, and what** elements are missing, and uses them to guide structurally consistent 3D MRI synthesis.
 
 ![Teaser](assets/Teaser.png)
@@ -54,7 +52,7 @@ Together, these modules enable CoPeDiT to perceive incomplete observations in a 
     <td>CoPeVAE learns completeness-aware latent representations with dedicated pretext tasks.</td>
   </tr>
   <tr>
-    <td nowrap>🧩 <strong>Specialized 3D DiT</strong></td>
+    <td nowrap>🧩 <strong>Dependency-Aligned 3D DiT</strong></td>
     <td>MDiT3D is tailored for semantically consistent 3D MRI synthesis.</td>
   </tr>
   <tr>
@@ -63,7 +61,7 @@ Together, these modules enable CoPeDiT to perceive incomplete observations in a 
   </tr>
   <tr>
     <td nowrap>🚀 <strong>Robust Missing-Pattern Synthesis</strong></td>
-    <td>Supports diverse + unseen missing MRI configurations.</td>
+    <td>Supports diverse and unseen missing MRI configurations.</td>
   </tr>
 </table>
 
@@ -152,7 +150,7 @@ The target dataset and missing modality setting are specified by arguments in th
 - `args.dataset`: specifies the dataset, e.g., `BraTS` or `IXI`.
 - `args.missing_num`: specifies the number of missing modalities to synthesize.
 
-For example, set `--dataset BraTS --missing_num 1/2/3` for BraTS missing modality synthesis, and `--dataset IXI --missing_num 1/2` for IXI.
+For example, set `--dataset BraTS` and choose `--missing_num` from `{1, 2, 3}` for BraTS, or from `{1, 2}` for IXI.
 
 #### Stage I: Train CoPeVAE-B
 
@@ -186,7 +184,7 @@ The missing slice setting is specified by arguments in the corresponding scripts
 - `args.dataset`: specifies the dataset, currently `UKBB`.
 - `args.missing_num`: specifies the number of missing slices to synthesize, e.g., `8`, `16`, or `24`.
 
-For example, set `--dataset UKBB --missing_num 8/16/24` for UKBB missing slice synthesis.
+For example, set `--dataset UKBB` and choose `--missing_num` from `{8, 16, 24}`.
 
 #### Stage I: Train CoPeVAE-C
 
@@ -227,7 +225,7 @@ Our code is built upon [MONAI](https://github.com/Project-MONAI/MONAI). We since
 
 ## 💬 Questions / Contact
 
-For questions regarding CoPeDiT, please feel free to open a GitHub issue or contact at [jxl1920@student.bham.ac.uk](mailto:jxl1920@student.bham.ac.uk) or [liujk1997@gmail.com](mailto:liujk1997@gmail.com).
+For questions regarding CoPeDiT, please feel free to open a GitHub issue or contact us at [jxl1920@student.bham.ac.uk](mailto:jxl1920@student.bham.ac.uk) or [liujk1997@gmail.com](mailto:liujk1997@gmail.com).
 
 ## 📝 Citation
 
