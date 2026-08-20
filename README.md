@@ -5,9 +5,8 @@ Code for the paper **"Exploiting Completeness Perception with Diffusion Transfor
 
 ## 🔥 News
 
-- **Paper released:** The anonymized paper is available in the review system.
-- **Code released:** Training and inference code for **CoPeVAE** and **MDiT3D** is now available.
-- **Pretrained models:** Checkpoints will be released soon.
+* 🎉 **Paper accepted:** CoPeDiT has been accepted to **Transactions on Machine Learning Research (TMLR)**!
+* 💻 **Code released:** Training and inference code for **CoPeVAE** and **MDiT3D** is now available.
 
 ## 📌 TL;DR
 
